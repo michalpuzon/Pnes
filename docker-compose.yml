@@ -1,0 +1,10 @@
+version: "3.3"
+services:
+  database:
+     image: jruchel/postgres
+     environment:
+         POSTGRES_PASSWORD: pnes
+         POSTGRES_USER: pnes
+         POSTGRES_DB: pnes
+     ports:
+       - 5432:5432
